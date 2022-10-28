@@ -1,0 +1,537 @@
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.navbar {
+  display: grid;
+  grid-template-columns: 500px 600px;
+  position: relative;
+  column-gap: 400px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 3;
+}
+.navtitle {
+  grid-column-start: 1;
+  justify-self: right;
+  color: grey;
+  font-weight: bolder;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 32px;
+}
+.navbutton {
+  display: flex;
+  gap: 20px;
+  grid-column-start: 2;
+  justify-self: left;
+  position: absolute;
+  bottom: 25%;
+  left: 10px;
+  background-color: transparent;
+  border-style: none;
+
+  font-size: 15px;
+}
+
+.navbutton a:hover {
+  text-decoration: none;
+  color: aqua;
+}
+.navbutton2 {
+  color: aqua;
+  filter: grayscale(1);
+}
+.navbutton2:hover {
+  filter: none;
+}
+.docplanner {
+  color: aqua;
+}
+.header {
+  display: grid;
+  grid-template-rows: 80px 100px;
+  align-self: center;
+}
+.sygnetheader {
+  height: 40px;
+  width: 40px;
+}
+.header > div {
+  justify-self: center;
+}
+.header h1 {
+  justify-self: center;
+  color: aqua;
+}
+.article {
+  display: flex;
+  padding-left: 150px;
+  width: 1200px;
+
+  justify-content: space-around;
+}
+.article article {
+  height: 150px;
+  width: 400px;
+  flex-wrap: wrap;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 17px;
+}
+.tags {
+  display: inline-flex;
+  width: 1157px;
+  justify-content: space-evenly;
+  padding-left: 14.5%;
+}
+.patients {
+  display: block;
+  height: 350px;
+  width: 300px;
+  background-color: aqua;
+  border: 2px aqua none;
+  border-radius: 15px;
+  padding: 25px;
+  color: white;
+  position: relative;
+}
+.patients h1 {
+  font-size: 25px;
+}
+.patients h2 {
+  font-size: 20px;
+}
+.patientlist {
+  position: absolute;
+  bottom: 46px;
+}
+.patientoptions {
+  background-color: transparent;
+  border-style: none;
+  font-size: 20px;
+  text-decoration: underline;
+}
+.patientoptions:hover {
+  color: blueviolet;
+}
+
+.patientoptions option {
+  color: black;
+  background-color: rgb(66, 228, 228);
+}
+.doctors {
+  display: block;
+  height: 350px;
+  width: 300px;
+  background-color: rgb(62, 62, 253);
+  border: 2px rgb(62, 62, 253) none;
+  border-radius: 15px;
+  padding: 25px;
+  color: white;
+  position: relative;
+}
+.doctors h1 {
+  font-size: 25px;
+}
+.doctors h2 {
+  font-size: 20px;
+}
+.doctorlist {
+  position: absolute;
+  bottom: 46px;
+}
+.doctoroptions {
+  background-color: transparent;
+  border-style: none;
+  font-size: 20px;
+  text-decoration: underline;
+}
+.doctoroptions:hover {
+  color: blueviolet;
+}
+
+.doctoroptions option {
+  color: white;
+  background-color: rgb(18, 18, 51);
+}
+.clinics {
+  display: block;
+  height: 350px;
+  width: 300px;
+  background-color: rgb(6, 6, 37);
+  border: 2px none;
+  border-radius: 15px;
+  padding: 25px;
+  color: white;
+  position: relative;
+}
+.clinics h1 {
+  font-size: 25px;
+}
+.clinics h2 {
+  font-size: 20px;
+}
+.clinicslist {
+  position: absolute;
+  bottom: 70px;
+}
+.clinicsoptions {
+  background-color: transparent;
+  border-style: none;
+  font-size: 20px;
+  text-decoration: underline;
+}
+.clinicsoptions:hover {
+  color: blueviolet;
+}
+
+.clinicsoptions option {
+  color: white;
+  background-color: rgb(11, 11, 29);
+}
+.clinicslist2 {
+}
+.clinicslist2 {
+  position: absolute;
+  bottom: 25px;
+}
+.clinicsoptions2 {
+  background-color: transparent;
+  border-style: none;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.clinicsoptions2:hover {
+  color: blueviolet;
+}
+
+.clinicsoptions2 option {
+  color: white;
+  background-color: rgb(11, 11, 29);
+}
+.brands {
+  display: flex;
+  margin-top: 30px;
+  gap: 40px;
+}
+.brands h1 {
+  width: 350px;
+  padding-left: 19%;
+  margin-left: 120px;
+  font-size: 30px;
+  color: aqua;
+}
+.brandslinks {
+  padding-top: 30px;
+  padding-right: 120px;
+  display: block;
+  justify-content: space-between;
+  position: relative;
+  width: 550px;
+}
+.znanylekarz {
+  position: relative;
+  bottom: 14px;
+  right: 14px;
+  background-color: transparent;
+}
+.brandslist {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 21px;
+}
+.brandslist img {
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1);
+  transition: box-shadow 0.3s;
+}
+.brandslist img:hover {
+  filter: none;
+  box-shadow: 0 0 3px;
+  background-color: transparent;
+}
+.brandslist2 {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 26px;
+}
+
+.brandslist2 img {
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1);
+  transition: box-shadow 0.3s;
+}
+.brandslist2 img:hover {
+  filter: none;
+  box-shadow: 0 0 3px;
+}
+.platform {
+  background-color: rgba(218, 247, 245, 255);
+  display: grid;
+  grid-template-columns: 700px 200px;
+  grid-template-rows: 300px 300px;
+  gap: 50px;
+  row-gap: 10px;
+}
+.platform h1 {
+  color: aqua;
+}
+.platform p {
+  color: gray;
+}
+.platformarticle {
+  gap: 30px;
+  margin-left: 160px;
+  padding: 50px;
+}
+.platformimg {
+  padding-left: 30px;
+  grid-column-start: 1;
+  grid-row-start: 2;
+  position: relative;
+  bottom: 25px;
+}
+.leaderstats {
+  width: 230px;
+  height: 260px;
+  grid-column-start: 2;
+  grid-row-start: 1;
+  padding-top: 40px;
+  background-color: white;
+  position: relative;
+  top: 35px;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  background-size: 200px 300px;
+}
+
+.doctorstats {
+  width: 230px;
+  height: 260px;
+  grid-column-start: 3;
+  grid-row-start: 2;
+  background-color: white;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+}
+.doctorstats div {
+  padding: 30px;
+}
+.appointmentstats {
+  width: 230px;
+  height: 260px;
+  grid-column-start: 3;
+  grid-template-rows: 1;
+  padding-top: 30px;
+  background-color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  top: 15px;
+  text-align: center;
+  background-size: 200px 300px;
+  border-radius: 10px;
+}
+.patientstats {
+  width: 230px;
+  height: 260px;
+  grid-column-start: 2;
+  grid-row-start: 2;
+  padding-top: 30px;
+  background-color: white;
+  position: relative;
+  top: 15px;
+  text-justify: distribute;
+  text-align: center;
+  background-size: 200px 300px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+}
+.cities {
+  display: block;
+}
+.cities .cities-intro {
+  margin-left: 35%;
+}
+.cities-intro {
+  text-align: center;
+  height: 300px;
+  width: 35%;
+}
+.cities-intro h1 {
+  color: aqua;
+}
+.offices-cities {
+  display: inline;
+}
+.offices-slides {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 12%;
+  padding-right: 12%;
+}
+.warsaw {
+  height: fit-content;
+  width: fit-content;
+  border: 1px whitesmoke solid;
+  transition: box-shadow 0.3s;
+}
+.warsaw:hover {
+  box-shadow: 0 0 15px rgb(27, 25, 25);
+}
+.office-desc {
+  display: flex;
+  color: gray;
+  height: 50px;
+  padding-left: 10%;
+  padding-top: 15px;
+  align-content: space-between;
+  column-gap: 100px;
+}
+
+.office-btn {
+  position: relative;
+  color: white;
+  background-color: rgb(94, 94, 250);
+
+  vertical-align: middle;
+
+  text-align: center;
+  bottom: 5px;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+}
+.office-btn p {
+  vertical-align: middle;
+  position: relative;
+  top: 4px;
+}
+.office-btnmexico {
+  position: relative;
+  color: white;
+  background-color: rgb(94, 94, 250);
+  right: 9%;
+  vertical-align: middle;
+
+  text-align: center;
+  bottom: 5px;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+}
+.office-btnmexico p {
+  vertical-align: middle;
+  position: relative;
+  top: 4px;
+}
+.office-btnbarcelona {
+  position: relative;
+  color: white;
+  background-color: rgb(94, 94, 250);
+  right: 6%;
+  vertical-align: middle;
+
+  text-align: center;
+  bottom: 5px;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+}
+.office-btnbarcelona p {
+  vertical-align: middle;
+  position: relative;
+  top: 4px;
+}
+.office-btnrome {
+  position: relative;
+  color: white;
+  background-color: rgb(94, 94, 250);
+
+  vertical-align: middle;
+  left: 3.5%;
+  text-align: center;
+  bottom: 5px;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+}
+.office-btnrome p {
+  vertical-align: middle;
+  position: relative;
+  top: 4px;
+}
+
+.Barcelona {
+  border: 1px whitesmoke solid;
+  transition: box-shadow 0.3s;
+}
+.Barcelona:hover {
+  box-shadow: 0 0 15px rgb(27, 25, 25);
+}
+
+.Munich {
+  border: 1px whitesmoke solid;
+  transition: box-shadow 0.3s;
+}
+.Munich:hover {
+  box-shadow: 0 0 15px rgb(27, 25, 25);
+}
+
+.offices-slides2 {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 12%;
+  padding-right: 12%;
+  padding-top: 20px;
+}
+.offices-slides3 {
+  display: flex;
+  gap: 28px;
+  padding-left: 13%;
+  padding-right: 12.5%;
+  padding-top: 20px;
+}
+.offices-cities a:hover {
+  text-decoration: none;
+}
+
+.cities-footer {
+  padding-top: 50px;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.opening-btn {
+  background-color: rgb(94, 94, 250);
+  border-style: none;
+  border-radius: 10px;
+  height: 40px;
+  width: 250px;
+  color: white;
+}
+footer {
+  font-size: 12px;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.footer-link {
+  position: relative;
+  bottom: 20px;
+}
